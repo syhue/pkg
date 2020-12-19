@@ -9,7 +9,7 @@
 <?php require 'nav.php'?>
 <body>
     <div class="container-first-page">
-        <div><img src = "product-logo-rm-bk.png"></div>
+        <!-- <div><img src = "product-logo-rm-bk.png" width="130px"></div> -->
         <div><h1 class="welcome">Welcome to Minimal TCP Stateful PKG.</h1><div>
         <div class="intro-text"><p>If you have not created a keystore, please create one first</p></div>
         <div class="intro-text">
@@ -19,12 +19,10 @@
 
 <script>
     $(document).ready(function() {
+        $('.container-first-page').show();
 
         $('.icon-menu').click(function() {
             $('.container-first-page').toggle();
-
-
-
 
         });
 });

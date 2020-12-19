@@ -15,7 +15,8 @@
 <body class="body-nav">
     <div><img class="icon-menu" src="icon-menu.png"></div>
     <div class ="container">
-        <div class = "flex-item category1"><a>Category 1</a>
+        <!-- <div><img class = "nav-logo" src = "product-logo-rm-bk.png"></div> -->
+        <div class = "flex-item category1"><a class="font-category">Category 1</a>
             <div class = "dropdown-content content1">
                 <a class ="little-item" href="kmnew.php">Init Keystore</a>
                 <a class ="little-item" href="kmcsr.php">GetCSR Ckey</a>
@@ -27,7 +28,7 @@
             </div>
         </div>
 
-        <div class = "flex-item category2"><a>Category 2</a>
+        <div class = "flex-item category2"><a class="font-category">Category 2</a>
             <div class = "dropdown-content content2">
                 <a class ="little-item" href="mpkget.php">View MPKs</a>
                 <a class ="little-item" href="mpkcms.php">GetCMS MPKs</a>
@@ -36,7 +37,7 @@
             </div>
         </div>
 
-        <div class = "flex-item category3"><a>Category 3</a>
+        <div class = "flex-item category3"><a class="font-category">Category 3</a>
             <div class = "dropdown-content content3">
                 <a class ="little-item" href="ibsgen.php">Test IBS Gen</a>
                 <a class ="little-item" href="ibschk.php">Test IBS Check</a>
@@ -50,28 +51,37 @@
 <script>
     $(document).ready(function() {
 
-        $('.container').hide();
-        $('.dropdown-content').hide();
+            function myFunction(x) {
+              if (x.matches) { // If media query matches
 
-        $('.icon-menu').click(function() {
-            $('.container').toggle();
+                $('.container').hide();
+                $('.dropdown-content').hide();
 
-        });
+                $('.icon-menu').click(function() {
+                    $('.container').toggle();
 
-        $('.category1').click(function() {
-            $('.content1').toggle();
+                });
 
-        });
+                $('.category1').click(function() {
+                    $('.content1').toggle();
 
-        $('.category2').click(function() {
-            $('.content2').toggle();
+                });
 
-        });
+                $('.category2').click(function() {
+                    $('.content2').toggle();
 
-        $('.category3').click(function() {
-            $('.content3').toggle();
+                });
 
-        });
+                $('.category3').click(function() {
+                    $('.content3').toggle();
+
+                });
+              }
+            }
+
+            var x = window.matchMedia("(max-width: 600px)")
+            myFunction(x) // Call listener function at run time
+            x.addListener(myFunction) // Attach listener function on state changes
 
 
 });
