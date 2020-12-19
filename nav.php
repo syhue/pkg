@@ -38,8 +38,8 @@
         <div class="container-row">
             <div class="container-left"><img class="logo" src="logo-mmu.png" alt="MMU Logo"></div>
 
-
-            <div class="dropdown container-right">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="dropdown container-right container-fluid">
             <div class="btn-group">
                 <a class="dropdownButton" type="button" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Category 1

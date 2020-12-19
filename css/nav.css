@@ -93,3 +93,12 @@
 	transition: 0.1s;
 	transform: scale(1.1) translateX(2px);
 }
+
+
+@media (max-width: 600px){
+	.container-row{
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: column;
+	}
+}
