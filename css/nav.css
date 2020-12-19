@@ -35,12 +35,15 @@
 }
 
 
-.dropdown-item:hover, .dropdown-item:active{
+.dropdown-item:hover{
 	color: white;
-	font-weight: 450;
+	font-weight: 500;
 	background-color: #394f49;
 }
 
+.dropdown-item:active{
+	transform: translateY(2px);
+}
 
 .container-left{
 	align-self: flex-start;

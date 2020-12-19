@@ -11,38 +11,42 @@
 <div class="container">
 	<div><h1>PKG keystoreInit.</h1></div>
 	<div><p>initializes the keystore.</p></div>
-	<div><br><br><br>
+	<div class = "little-container"><br><br><br>
 		<form action="kmnew.php" method="post">
-			<div class = "little-container">
-				<div>
-					<label>CKEY Algo: </label>
-					<select id="kalgo" name="kalgo" value="">
-					<option value="RSA" selected>RSA</option>';
-					</select>
+			<div class = "super-little-container">
+
+				<div class = "flex-item-left">
+					<div><label>CKEY Algo: </label></div><br>
+					<div><label>CKEY Key-Spec:</label></div><br>
+					<div><label>KeyStore Password:</label></div><br>
 				</div>
-				</br>
-				</br>
-				<div>
-					<label>CKEY Key-Spec:</label>
-					<!-- <label>e.g., 2048</label> -->
-					<input type="text" id="ks" name="ks" placeholder="  e.g., 2048" style="width:300px;"
-					value="<?php
-						if (isset($_POST["ks"]) || !empty($_POST["ks"])) {
-							echo $_POST["ks"];
-						}
-					?>">
+
+				<div class = "flex-item-right">
+					<div>
+						<select id="kalgo" name="kalgo" value="">
+						<option value="RSA" selected>RSA</option>';
+						</select>
+					</div><br>
+
+					<div>
+						<!-- <label>e.g., 2048</label> -->
+						<input type="text" id="ks" name="ks" placeholder="  e.g., 2048" style="width:300px;"
+						value="<?php
+							if (isset($_POST["ks"]) || !empty($_POST["ks"])) {
+								echo $_POST["ks"];
+							}
+						?>">
+					</div><br>
+
+					<div>
+						<input type="password" id="ksass" name="kspass" style="width:300px;">
+					</div><br>
 				</div>
-				</br>
-				</br>
-				<div>
-					<label>KeyStore Password:</label>
-					<input type="password" id="ksass" name="kspass" style="width:300px;">
-				</div>
-				</br>
-				</br>
+			</div>
+			<div>
 				<button class = "submit" type="submit" value="Submit">Submit</button>
 			</div>
-		</form>
+		<form>
 	</div>
 </div>
 
