@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel = "icon" href ="product-logo-rm-bk.png" type = "image/x-icon">
 </head>
 
     <body>
