@@ -7,7 +7,7 @@ h1{
 	color: #1d3557;
 }
 
-.container{
+.container-second-page{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -28,7 +28,10 @@ h1{
 	display: flex;
 	flex-wrap: wrap;
 	/* border: 2px solid red; */
-	width: 100%;
+	max-width: 100%;
+	padding-left: 0.5rem;
+	padding-right: 0.3rem;
+
 
 }
 
@@ -39,7 +42,7 @@ h1{
 
 
 .flex-item-right{
-	flex-grow: 2;
+	flex-grow: 1;
 	text-align: left;
 }
 
@@ -65,6 +68,7 @@ select, input{
 	padding-top: 0.2rem;
 	padding-bottom: 0.2rem;
 }
+
 
 input:focus{
 	background-color: #fffbfa;
@@ -96,4 +100,26 @@ input:focus{
 	border: 2px solid black;
 	transition: 0.1s;
 	transform: translateY(2px);
+}
+
+@media only screen and (max-width: 600px) {
+
+	.container-second-page{
+		/* border: 1px solid red; */
+		justify-content: center;
+		text-align: center;
+	}
+
+	input{
+		width: 70%;
+		height: 2rem;
+	}
+
+	.label{
+		margin-bottom: 0.9rem;
+	}
+
+	p{
+		font-size: 1.2rem;
+	}
 }

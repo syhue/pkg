@@ -8,7 +8,7 @@
 <!-- navbar-->
 <?php require 'nav.php'?>
 
-<div class="container">
+<div class="container-second-page">
 	<div><h1>PKG keystoreInit.</h1></div>
 	<div><p>initializes the keystore.</p></div>
 	<div class = "little-container"><br><br><br>
@@ -16,9 +16,9 @@
 			<div class = "super-little-container">
 
 				<div class = "flex-item-left">
-					<div><label>CKEY Algo: </label></div><br>
-					<div><label>CKEY Key-Spec:</label></div><br>
-					<div><label>KeyStore Password:</label></div><br>
+					<div class = "label"><label>CKEY Algo: </label></div><br>
+					<div class = "label"><label>CKEY Key-Spec:</label></div><br>
+					<div class = "label"><label>KeyStore Password:</label></div><br><br>
 				</div>
 
 				<div class = "flex-item-right">

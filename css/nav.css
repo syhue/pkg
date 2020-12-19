@@ -1,104 +1,110 @@
-.dropdownButton{
-	border: none;
-	color: black;
-	font-family: 'Merriweather Sans', sans-serif;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 1.1rem;
-	padding: 1.2rem 3rem 0.5rem 1.8rem;
-	border-radius: 8px;
-	padding-bottom: 0px;
+.dropdown-content{
+	display: none;
 }
 
-
-.dropdownButton:hover{
-	font-family: 'Merriweather Sans', sans-serif;
-	text-decoration: none;
-	transform: scale(1.2);
-}
-
-
-.dropdown-menu{
-	color: black;
-	font-size: 1rem;
-	border: none;
-	background-color: #fceed1;
-	opacity: 120%;
-	border-radius: 0.8rem;
-}
-
-
-.dropdown-item:{
-	padding: 5px 5px 5px 5px;
-	color: black;
-	padding-left: 6px;
-}
-
-
-.dropdown-item:hover{
-	color: white;
-	font-weight: 500;
-	background-color: #394f49;
-}
-
-.dropdown-item:active{
-	transform: translateY(2px);
-}
-
-.container-left{
-	align-self: flex-start;
-	display:flex;
-	flex-grow: 1;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: flex-start;
-	padding: 2rem 2rem 2rem 2rem;
-	/* border: 1px solid red; */
-}
-
-
-.container-right{
-	align-self: flex-start;
-	display:flex;
-	flex-grow: 9;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	padding: 2rem 2rem 2rem 2rem;
-	/* padding-bottom: -80px; */
-	/* border: 1px solid red; */
-}
-
-.container > div{
-	text-align: center;
-}
-
-
-.container-row{
+.container{
+	overflow: hidden;
 	display: flex;
-	flex-wrap: nowrap;
-	flex-direction: row;
 }
 
 
-.logo{
-	background-color: white;
-	padding: 10px 10px 10px 10px;
-	border-radius: 10px;
-	-webkit-box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.67);
-	-moz-box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.67);
-	box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.63);
-}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
 
-.logo:hover{
-	transition: 0.1s;
-	transform: scale(1.1) translateX(2px);
-}
+	.icon-menu{
+		width: 50px;
+		cursor: pointer;
+		position: absolute;
 
+	}
 
-@media (max-width: 600px){
-	.container-row{
+	.container{
+		flex-direction: column;
 		display: flex;
-		flex-wrap: nowrap;
+		justify-content:flex-start;
+		padding-top: 5rem;
+		width: 100%;
+		height: 100%;
+		background-color: #c6ebc9;
+		color: #23120b;
+		font-family: 'Open Sans', sans-serif;
+		text-align: center;
+		height: 100%;
+		align-items: center;
+		cursor: pointer;
+	}
+
+	.dropdown-content{
+		display: flex;
+		flex-direction: column;
+		font-size: 1.2rem;
+		text-decoration: none;
+		text-align: left;
+		justify-content: flex-start;
+		align-items: center;
+		/* background-color: #f3f2da; */
+		padding: 1rem 1rem 1rem 1rem;
+	}
+
+	.flex-item{
+		font-size: 1.8rem;
+		padding-top: 2rem;
+		padding-bottom: 0.5rem;
+		/* border: 1px solid red; */
+		width: 100%;
+	}
+
+	.little-item{
+		text-decoration: none;
+		color: #433d3c;
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
+		text-decoration-style: wavy;
+
+	}
+
+	.little-item:hover{
+		text-decoration: none;
+		color: #23120b;
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
+		text-decoration-style: wavy;
+		transform: translateX(2px);
+
+	}
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.container{
 		flex-direction: column;
 	}
+
+	.dropdown-content{
+		display: none;
+	}
+
+	.flex-item{
+		padding-bottom: 2rem;
+		font-size: 3rem;
+	}
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }

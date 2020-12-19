@@ -1,13 +1,15 @@
 .welcome{
 	text-align: center;
-	font-family: 'Merriweather Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
 	font-size: 3rem;
 	padding-top: 2rem;
 	padding-bottom:2rem;
-	color: #1d3557;
+	color: #433d3c;
+
 }
 
-.container{
+.container-first-page{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -18,6 +20,50 @@
 
 .intro-text{
 	text-align: center;
-	color: #457b9d;
-	font-weight: 500;
+	color: #532e1c;
+	font-weight: 550;
+	opacity: 80%;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+	.body{
+		/* border: 1px solid red; */
+		margin: 0px 0px 0px 0px;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+
+	.container-first-page{
+		/* border: 1px solid red; */
+		height: 100%;
+		max-width: 100%;
+		padding-left: 1.8rem;
+		padding-right: 1.8rem;
+		display: flex;
+		flex-direction: column;
+
+	}
+
+	.welcome{
+		font-size: 2.4rem;
+		font-weight: 700;
+	}
+
+	.intro-text{
+		text-align: center;
+		color: #532e1c;
+		font-weight: 550;
+		opacity: 85%;
+		font-size: 1.1rem;
+	}
+
+	img{
+		width: 8rem;
+	}
 }
