@@ -1,0 +1,23 @@
+.welcome{
+	text-align: center;
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 3rem;
+	padding-top: 2rem;
+	padding-bottom:2rem;
+	color: #1d3557;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60%;
+	/* border: 1px solid red; */
+}
+
+
+.intro-text{
+	text-align: center;
+	color: #457b9d;
+	font-weight: 500;
+}
