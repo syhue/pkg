@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="css/nav.css">
     <link rel = "icon" href ="product-logo-rm-bk.png" type = "image/x-icon">
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 </head>
 
 <body class="body-nav">
