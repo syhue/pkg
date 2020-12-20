@@ -34,8 +34,7 @@
 		height: 100%;
 		width: 100%;
 		display: flex;
-		justify-content: center;
-		align-items: center;
+		align-self: flex-start;
 	}
 
 
@@ -51,7 +50,7 @@
 	}
 
 	.welcome{
-		font-size: 2.4rem;
+		font-size: 2.2rem;
 		font-weight: 700;
 	}
 
@@ -60,7 +59,7 @@
 		color: #532e1c;
 		font-weight: 550;
 		opacity: 85%;
-		font-size: 1.1rem;
+		font-size: 1rem;
 	}
 
 
