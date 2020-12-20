@@ -83,8 +83,7 @@
             myFunction(x) // Call listener function at run time
             x.addListener(myFunction) // Attach listener function on state changes
 
-
-);
+    );
 
 </script>
 
