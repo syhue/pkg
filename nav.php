@@ -49,7 +49,7 @@
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 
 <script>
-    $(document).ready(
+    $(document).ready(function() {
 
             function myFunction(x) {
               if (x.matches) { // If media query matches
@@ -83,7 +83,9 @@
             myFunction(x) // Call listener function at run time
             x.addListener(myFunction) // Attach listener function on state changes
 
-    );
+
+});
+
 
 </script>
 
