@@ -49,40 +49,66 @@
 <script>
     $(document).ready(function() {
 
+        $('.dropdown-content').hide();
+
+        $('.category1').click(function() {
+            $('.content1').toggle();
+            $('.content3').hide();
+            $('.content2').hide();
+        });
+
+        $('.category2').click(function() {
+            $('.content2').toggle();
+            $('.content1').hide();
+            $('.content3').hide();
+
+        });
+
+        $('.category3').click(function() {
+            $('.content3').toggle();
+            $('.content1').hide();
+            $('.content2').hide();
+
+        });
+
             function myFunction(x) {
               if (x.matches) { // If media query matches
 
                 $('.container').hide();
-                $('.dropdown-content').hide();
+                // $('.dropdown-content').hide();
 
                 $('.icon-menu').click(function() {
                     $('.container').toggle();
 
                 });
 
-                $('.category1').click(function() {
-                    $('.content1').toggle();
-                    $('.content2').hide();
-                    $('.content3').hide();
-                });
-
-                $('.category2').click(function() {
-                    $('.content2').toggle();
-                    $('.content1').hide();
-                    $('.content3').hide();
-
-                });
-
-                $('.category3').click(function() {
-                    $('.content3').toggle();
-                    $('.content1').hide();
-                    $('.content2').hide();
-
-                });
+                // $('.category1').click(function() {
+                //     $('.content1').toggle();
+                //     $('.content2').hide();
+                //     $('.content3').hide();
+                // });
+                //
+                // $('.category2').click(function() {
+                //     $('.content2').toggle();
+                //     $('.content1').hide();
+                //     $('.content3').hide();
+                //
+                // });
+                //
+                // $('.category3').click(function() {
+                //     $('.content3').toggle();
+                //     $('.content1').hide();
+                //     $('.content2').hide();
+                //
+                // });
               }
-            }
+          }
 
-            var x = window.matchMedia("(max-width: 600px)")
+
+
+
+
+            var x = window.matchMedia("(max-width: 768px)")
             myFunction(x) // Call listener function at run time
             x.addListener(myFunction) // Attach listener function on state changes
 
